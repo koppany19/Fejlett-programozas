@@ -5,10 +5,19 @@
 #ifndef STACK_H
 #define STACK_H
 
+#include <iostream>
+#include "List.h"
 
+using namespace std;
 
 class Stack {
 public:
+    void push(int e);
+    int pop();
+    bool isEmpty() const;
+    void print() const;
+private:
+    List list;
 };
 
 
